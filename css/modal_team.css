@@ -1,0 +1,175 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+/* 그리드시스템 설정 */
+.container {
+    width: 100%; 
+    /* 모바일, 태블릿의 크기 */
+    max-width: 1024px;
+    /* 반응형 웹에은 위드가 이렇게 두개 들어간다. */
+    /* 1024까지만 보겠다는 것이다. */
+    margin: 0 auto;
+}
+/* 그리드시스템 설정 */
+
+/*===== header =====*/
+header {
+    width: 100%;
+    height: 300px;
+    background: url(../images/header.jpg) no-repeat left top;
+    background-size: cover;
+}
+
+.main-menu {
+    background-color: #000;
+}
+
+/* gnb */
+.gnb {
+    display: flex;
+}
+
+.gnb > li {
+    padding: 20px 10px;
+}
+
+.gnb > li > a{
+    color: #fff;
+}
+
+/*===== main =====*/
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: row; */
+}
+
+.flex-container > section {
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+section:nth-child(even) {
+    background-color: #ccc;
+    padding: 10px 0;
+    /* 짝수번째 */
+}
+
+.title {
+    margin: 30px 0 20px 30px;
+}
+
+.photo {
+    display: none;
+}
+
+.con-text {
+    margin: 30px 30px 20px 30px;
+    
+}
+
+.icecoffee-des h3 {
+    margin-left: 30px;
+}
+
+.icecoffee-des .con-text {
+    margin-top: 10px;
+}
+
+.icecoffee-des ol {
+    list-style-type: decimal;
+    /* 숫자 스타일 재표시 */
+    list-style-position: inside;
+    /* 리스트 위치 박스 안으로 */
+    font-size: 14px;
+    background-color: aquamarine;
+}
+
+.icecoffee-des ol > li {
+    line-height: 30px;
+}
+
+/*====== footer =====*/
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+}
+
+footer h2 {
+    font-family: 'Nanum Myeongjo', serif;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    /* height값과 똑같이 맞추면 수직 정렬이 된다. */
+}
+
+
+/*====== tablet 768px ======*/
+@media screen and (min-width:768px) {
+    header {
+        height: 400px;
+    }
+    .flex-container {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    
+    .flex-container > section {
+        width: 50%;
+        border: 1px dotted #aaa;
+    }
+    
+    .flex-container > section:last-child {
+        width: 100%;
+    }
+}
+
+
+/*====== PC 1024px ======*/
+@media screen and (min-width:1024px) {
+    header {
+        height: 500px;
+    }
+
+    .gnb > li {
+        padding: 20px 30px;
+    }
+
+    .flex-container {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    
+    .flex-container > section {
+        width: 100%;
+        border: 0;
+    }
+    
+    .flex-container > section:last-child {
+        width: 100%;
+    }
+
+    .photo {
+        display: block;
+        float: left;
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+    #choice .photo {
+        float: right;
+    }
+    
+    #choice .photo > img {
+        width: 100%;
+        border-radius: 50%;
+    }
+}
+
+
+
+/* intro
+.intro */
+
+/* 반드시 가로크기 320px 부터 웹 디자인 체크  */

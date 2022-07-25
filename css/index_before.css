@@ -1,0 +1,644 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 0;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 1.1em;
+  font-weight: normal;
+}
+
+p {
+  font-size: 13px;
+}
+
+strong {
+  font-size: 0.9em;
+}
+
+span {
+  font-size: 1.375em;
+}
+
+header,
+nav,
+main,
+article,
+aside,
+section,
+footer {
+  display: block;
+}
+
+body {
+  background-color: #F9E385;
+}
+
+.grid-system {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .grid-system {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+
+h2 {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 50px;
+  }
+}
+
+h3 {
+  font-size: 60px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+p {
+  font-size: 13px;
+}
+
+header {
+  width: 100%;
+}
+
+header img {
+  width: 100%;
+}
+
+header .logo img {
+  display: block;
+  width: 70%;
+}
+
+header .logo p {
+  position: absolute;
+  left: 80%;
+  top: 20%;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header .title {
+  position: absolute;
+  -webkit-transform: translate(0%, -112%);
+          transform: translate(0%, -112%);
+  z-index: -1;
+}
+
+header .title h2 {
+  position: absolute;
+  left: 80%;
+  bottom: 10%;
+  width: 500px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header #navi {
+  /* 내비게이션 추가 */
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  /* vw(viewport width)의 줄임말, 100vw는 뷰포트 너비에 꽉 차게 */
+  z-index: 10000;
+  background: #e9592c;
+}
+
+header #navi h1 {
+  /* 내비게이션 로고 */
+  float: left;
+  padding: 10px 0 0 15px;
+}
+
+header .main-nav {
+  /* 내비게이션 메뉴 */
+  position: relative;
+  float: left;
+  height: 60px;
+  margin: 10px 0 0 50px;
+}
+
+header .main-nav li {
+  list-style: none;
+  display: inline-block;
+  /* 가로 메뉴 표현 */
+  margin: 12px 30px;
+}
+
+header .main-nav a {
+  color: #fff;
+  font-family: Arial;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+header #ms1 {
+  background-image: url("../images/bg01.jpg");
+}
+
+header #ms2 {
+  background-image: url("../images/bg02.jpg");
+}
+
+header #ms3 {
+  background-image: url("../images/bg03.jpg");
+}
+
+main .flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+main .flex-box #self-introduce {
+  padding: 4%;
+  display: inline-block;
+}
+
+main .flex-box #self-introduce .SSH-profile img {
+  width: 40%;
+}
+
+main .flex-box #self-introduce .SSH-MIND {
+  float: right;
+}
+
+main .flex-box #self-introduce .SSH-MIND p {
+  font-size: 30px;
+}
+
+main .flex-box #self-introduce ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+  row-gap: 0.5rem;
+  margin-top: 10px;
+  width: 50%;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  main .flex-box #self-introduce ul {
+    width: 50%;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+main .flex-box #self-introduce ul li a img {
+  width: 100%;
+  height: 100%;
+}
+
+main .flex-box #self-introduce ul li a p {
+  padding: 3px 10%;
+  line-height: 15px;
+}
+
+main .flex-box #SSH-Type ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  main .flex-box #SSH-Type ul {
+    width: 100%;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+}
+
+main .flex-box #SSH-Type ul .OMG {
+  position: relative;
+  top: -33%;
+  margin-left: 40px;
+}
+
+main .flex-box #skill img {
+  position: relative;
+  left: 30%;
+}
+
+main .flex-box #skill table {
+  position: relative;
+  margin-top: -1300px;
+  left: 40%;
+  width: 900px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .flex-box #skill table th {
+  border: 0;
+}
+
+main .flex-box #skill table tr {
+  line-height: 100px;
+}
+
+main .flex-box #skill table tr img {
+  margin-top: 30px;
+}
+
+main .flex-box #skill table .fatgot img {
+  left: -30px;
+}
+
+main .flex-box #portfolio {
+  margin-top: 20%;
+}
+
+main .flex-box #portfolio .aside-right {
+  float: right;
+}
+
+@media screen and (min-width: 1024px) {
+  main .flex-box #portfolio .aside-right hr, main .flex-box #portfolio .aside-right p {
+    position: relative;
+    left: 30%;
+  }
+}
+
+main .flex-box #portfolio .portfolio-Subname {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  width: 100%;
+  margin-top: 10%;
+  -webkit-column-gap: -300px;
+          column-gap: -300px;
+}
+
+main .flex-box #portfolio .portfolio-Subname h4 {
+  font-size: 120px;
+}
+
+main .flex-box #portfolio .portfolio-Subname .OMG2 {
+  position: relative;
+  top: 150%;
+  left: -40%;
+}
+
+@media screen and (min-width: 1024px) {
+  main .flex-box #portfolio .portfolio-Subname .OMG2 {
+    top: 30%;
+    left: -80%;
+  }
+}
+
+main .flex-box #portfolio .portfolio-Subname .OMG2 p {
+  font-size: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  main .flex-box #portfolio .portfolio-Subname .OMG2 p {
+    font-size: 40px;
+  }
+}
+
+main .flex-box #portfolio .portfolio-Subname .OMG2 hr {
+  border: 3px solid #1E1E1E;
+  width: 100%;
+}
+
+main .flex-box #portfolio .portfolio-Subname :nth-child(1) {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / 4;
+}
+
+@media screen and (min-width: 1024px) {
+  main .flex-box #portfolio .portfolio-Subname {
+    width: 100%;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+}
+
+main .flex-box #portfolio .WEB {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  width: 100%;
+  gap: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+  main .flex-box #portfolio .WEB {
+    width: 100%;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+  main .flex-box #portfolio .WEB :nth-child(1) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    grid-row: 1 / 4;
+  }
+}
+
+main .flex-box #portfolio .WEB .web-SiteBtn p {
+  font-size: 20px;
+  border: 3px solid #1E1E1E;
+  width: 200px;
+  line-height: 50px;
+  text-align: center;
+}
+
+main .flex-box #portfolio .WEB .web-SiteBtn a {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  main .flex-box #portfolio .WEB .web-SiteBtn a {
+    margin-bottom: 10px;
+  }
+}
+
+main .flex-box #portfolio .WEB #slider {
+  position: relative;
+  overflow: hidden;
+  margin: -755px 150px 800px 50px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  main .flex-box #portfolio .WEB #slider {
+    margin: -755px 0px 0px 80px;
+  }
+}
+
+main .flex-box #portfolio .WEB #slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+main .flex-box #portfolio .WEB #slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 875px;
+  height: 450px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+main .flex-box #portfolio .WEB a.control_prev, main .flex-box #portfolio .WEB a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+main .flex-box #portfolio .WEB a.control_prev:hover, main .flex-box #portfolio .WEB a.control_next:hover {
+  opacity: 1;
+}
+
+main .flex-box #portfolio .WEB a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+main .flex-box #portfolio .WEB a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+
+main .flex-box #portfolio .WEB .slider_option {
+  position: relative;
+  margin: 0px auto;
+  width: 160px;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 1024px) {
+  main .flex-box #portfolio .WEB .slider_option {
+    margin: 0px auto;
+  }
+}
+
+main .flex-box #portfolio .smart-Phone img {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  width: 80%;
+}
+
+main .flex-box #portfolio .smart-Phone .kawayee-Icons li {
+  width: 60px;
+  position: relative;
+  top: -900px;
+  margin-left: 80px;
+  display: inline-block;
+}
+
+main .flex-box #portfolio .smart-Phone .kawayee-Icons a {
+  border: 1px solid black;
+  text-decoration: none;
+  text-align: center;
+  color: #3ca3f8;
+  padding: 10px;
+  border-radius: 15px;
+  -webkit-box-shadow: inset -15px -15px 15px 1px;
+          box-shadow: inset -15px -15px 15px 1px;
+}
+
+main .flex-box #portfolio .smart-Phone .kawayee-Icons a:hover {
+  -webkit-box-shadow: 15px 15px 15px 0px;
+          box-shadow: 15px 15px 15px 0px;
+}
+
+main .flex-box #portfolio .smart-Phone .smart-Phone-window {
+  position: relative;
+  top: -850px;
+  width: 20%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(500px auto);
+}
+
+main .flex-box #portfolio .smart-Phone .smart-Phone-window .box {
+  border: 2px solid #1E1E1E;
+  width: 200px;
+  height: 200px;
+  margin: 0px 20px 20px 30px;
+}
+
+main .flex-box #portfolio .smart-Phone .smart-Phone-window .box1 {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+}
+
+main .flex-box #portfolio .smart-Phone .smart-Phone-window .box2 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  /* z-index: 10; */
+}
+
+main .flex-box #portfolio .smart-Phone .smart-Phone-window .box3 {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  /* z-index: 10; */
+}
+
+main .flex-box #portfolio .smart-Phone .smart-Phone-window .box4 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+main .flex-box #portfolio .smart-Phone .smart-Phone-window .box5 {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+main .flex-box #portfolio .smart-Phone .smart-Phone-window .box6 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+main .flex-box #portfolio .smart-Phone .smart-Phone-window .box7 {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 4;
+  grid-row: 4;
+}
+
+main .flex-box #portfolio .smart-Phone .smart-Phone-window .box8 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 4;
+  grid-row: 4;
+}
+
+main .flex-box #portfolio .movie-Plyer {
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  margin-top: 100px;
+}
+/*# sourceMappingURL=index_before.css.map */
