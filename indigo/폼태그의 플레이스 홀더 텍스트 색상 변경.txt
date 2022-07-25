@@ -1,0 +1,10 @@
+* 폼태그의 플레이스 홀더 텍스트 색상 변경할 선택자
+
+::-moz-input-placeholder, ::-moz-textarea-placeholder{
+color:#3f51b5;
+}
+
+::-webkit-input-placeholder, ::-webkit-textarea-placeholder{
+       color:#3f51b5;
+}    
+
